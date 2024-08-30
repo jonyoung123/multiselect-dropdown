@@ -153,7 +153,7 @@ class _Dropdown<T> extends StatelessWidget {
         ? dropdownItemDecoration.disabledIcon
         : option.selected
             ? dropdownItemDecoration.selectedIcon
-            : null;
+            : dropdownItemDecoration.disabledIcon;
 
     return Ink(
       child: ListTile(
